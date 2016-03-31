@@ -1,4 +1,7 @@
 {
+    "name": "xcezx/protoc-gen-php",
+    "description": "protoc-gen-php",
+    "bin": ["bin/protoc-gen-php"],
     "repositories": [
         {
             "type": "vcs",
