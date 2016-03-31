@@ -1,0 +1,14 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/stanley-cheung/Protobuf-PHP"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "datto/protobuf-php": "dev-master",
+        "google/auth": "v0.7",
+        "pear/console_commandline": "v1.2.1"
+    }
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__.'/../vendor/autoload.php';
+
+date_default_timezone_set('GMT');
+error_reporting(error_reporting() & ~E_STRICT);
+
+\DrSlump\Protobuf::autoload();
+
+try {
+    \DrSlump\Protobuf\Compiler\Cli::run(__FILE__);
+    exit(0);
+} catch (Exception $e) {
+    fputs(STDERR, (string) $e . PHP_EOL);
+    exit(1);
+}
